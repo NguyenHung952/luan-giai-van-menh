@@ -4,53 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luận Giải Vận Mệnh</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b0c10;
-            color: #c5c6c7;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(to right, #1f2833, #45a29e);
-            padding: 20px;
-            border-bottom: 3px solid #66fcf1;
-        }
-        h1, h2 {
-            color: #66fcf1;
-        }
-        .form-section, #resultSection {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input, select, button {
-            margin: 10px;
-            padding: 10px;
-            width: 80%;
-            border-radius: 5px;
-            border: none;
-        }
-        button {
-            background: #66fcf1;
-            color: black;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #45a29e;
-        }
-        #resultSection {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -94,43 +48,7 @@
         </div>
     </section>
 
-    <script>
-        document.getElementById("inputForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            // Lấy dữ liệu từ form
-            const name = document.getElementById("name").value;
-            const dob = document.getElementById("dob").value;
-            const tob = document.getElementById("tob").value;
-            const pob = document.getElementById("pob").value;
-            const gender = document.getElementById("gender").value;
-
-            // Kiểm tra dữ liệu đầu vào
-            if (!name || !dob || !tob || !pob) {
-                alert("Vui lòng nhập đầy đủ thông tin!");
-                return;
-            }
-
-            // Xử lý phân tích vận mệnh (giả lập)
-            const resultContent = `
-                <p><strong>🔮 Họ tên:</strong> ${name}</p>
-                <p><strong>📅 Ngày sinh:</strong> ${dob} - Giờ sinh: ${tob}</p>
-                <p><strong>📍 Nơi sinh:</strong> ${pob}</p>
-                <p><strong>⚤ Giới tính:</strong> ${gender}</p>
-                <hr>
-                <h3>✨ Luận Giải Số Mệnh ✨</h3>
-                <p>🔹 Mệnh & Ngũ Hành: <strong>Hỏa</strong> - Tương sinh: <strong>Mộc</strong></p>
-                <p>🔹 Tình duyên: <strong>Ổn định, dễ gặp quý nhân.</strong></p>
-                <p>🔹 Sự nghiệp: <strong>Thăng tiến nhanh trong 3 năm tới.</strong></p>
-                <p>🔹 Cảnh báo vận hạn: <strong>Cẩn thận các mối quan hệ năm 2027.</strong></p>
-                <p>🔹 Cách hóa giải: <strong>Dùng vật phẩm phong thủy, cân bằng năng lượng.</strong></p>
-            `;
-
-            // Hiển thị kết quả
-            document.getElementById("resultContent").innerHTML = resultContent;
-            document.getElementById("resultSection").style.display = "block";
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
