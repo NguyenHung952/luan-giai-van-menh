@@ -46,9 +46,7 @@ git clone https://github.com/YOUR-USERNAME/fortune-telling.git
 2️⃣ Mở file `index.html` trong trình duyệt.  
 3️⃣ Nhập thông tin và xem luận giải vận mệnh.  
 
-### 🌍 **2. Chạy trên Google Site**  
-Bạn có thể sử dụng chương trình bằng cách truy cập:  
-https://sites.google.com/view/mycodinz/lu%E1%BA%ADn-gi%E1%BA%A3i-v%E1%BA%ADn-m%E1%BB%87nh
+
 
 ---
 
